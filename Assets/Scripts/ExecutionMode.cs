@@ -19,7 +19,7 @@ public class ExecutionMode : MonoBehaviour
     public int baseEnemyCount = 10;
     public int baseResourceCount = 3; 
     public int maxWaves = 20;
-    private int minEnemyCount = 15;
+    private int minEnemyCount = 10;
     private int maxEnemyCount = 30;
     private int minResourceCount = 3;
     private int maxResourceCount = 10;
@@ -126,7 +126,7 @@ public class ExecutionMode : MonoBehaviour
         if (currentWave <= 5)
         {
             currentWaveEnemies.Add(enemyPrefabs[0]);
-            minEnemyCount = 15;
+            minEnemyCount = 10;
         }
         else if (currentWave > 5 && currentWave <= 10)
         {
